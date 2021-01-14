@@ -1,0 +1,659 @@
+body {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  margin: 30px 0 0 85px;
+  background-color: #1b1c1f;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+/*     верхняя панель      */
+
+#menu-bar {
+  height: 30px;
+  background: #1b1c1f;
+  -webkit-app-region: drag;
+}
+#menu-bar > div {
+  display: flex;
+  justify-content: space-between;
+}
+.menubar-btn {
+  -webkit-app-region: no-drag;
+}
+.left {
+  width: 100vw;
+}
+.left img {
+  max-width: 85px;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  border-bottom-right-radius: 50%;
+}
+.left button {
+  background-color: #000;
+  margin: 0 0 0 0;
+  padding: 15px 25px;
+  border: none;
+  background: transparent;
+  outline: none;
+  background-image: url(./img/burger-menu.png);
+  background-position: center;
+}
+.left button:hover {
+    box-shadow: inset 0 0 100px rgba(128, 128, 128, 0.199);
+    transform: scale(1.1);
+}
+.left button i {
+  color: white;
+}
+
+/*   элементы header    */
+
+.hashtag-text {
+  width: 700px;
+  background-color:#36393F;
+}
+.header {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font: 600px;
+  font-size: 18px;
+  color: #F8F8F8
+}
+.header p {
+  margin: 8px 0 0 10px;  
+}
+.header img {
+  width: 35px;
+  height: 35px;
+}
+.search_bar {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: red;
+}
+.search_bar input {
+  background-color: #55575A;
+  color: white;
+  height: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search_bar button {
+  background-color: #55575A;
+  color: white;
+  height: 30px;
+}
+.header_icons_1 {
+  background-color:#dde1e2;
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  margin: 2px 0 0 10px;
+  margin-left: 240px;
+}
+.header_icons_1 img {
+  padding: 5px 5px;
+  width: 30px;
+  height: 30px;
+}
+.header_icons_1:active {
+  transform: scale(0.9);
+}
+.header_icons_2 {
+  background-color:#dde1e2;
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  margin: 2px 0 0 10px;
+  margin-left: 10px;
+}
+.header_icons_2 img {
+  padding: 5px 5px;
+  width: 30px;
+  height: 30px;
+}
+.header_icons_2:active {
+  transform: scale(0.9);
+}
+.header_icons_3 {
+  background-color:#dde1e2;
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  margin: 2px 0 0 10px;
+  margin-left: 10px;
+}
+.header_icons_3 img {
+  padding: 5px 5px;
+  width: 30px;
+  height: 30px;
+}
+.header_icons_3:active {
+  transform: scale(0.9);
+}
+.header_icons_4 {
+  background-color:#dde1e2;
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  margin: 2px 0 0 10px;
+}
+.header_icons_4 img {
+  padding: 5px 6px;
+  width: 30px;
+  height: 30px;
+}
+.header_icons_4:active {
+  transform: scale(0.9);
+}
+.header_icons_5 {
+  background-color:#dde1e2;
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  margin: 2px 0 0 10px;
+}
+.header_icons_5 img {
+  padding: 5px 6px;
+  width: 30px;
+  height: 30px;
+}
+.header_icons_5:active {
+  transform: scale(0.9);
+}
+
+/*   слово "Discord" в верхнем левом углу   */
+
+.background p {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 8px 0 0 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.background p:active {
+  transform: scale(0.9);
+  color: grey;
+}
+.background p:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.562);
+}
+
+/*     блок article в центре  */
+
+.article {
+  padding: 3px 30px 10px 10px ;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: auto;
+  text-align: justify;
+  background-image: url(./img/Discord_background.jpg);
+  background-size: contain;
+  background-blend-mode: darken;
+  font-size: 25px;
+}
+.article p {
+  color: silver;
+  padding: 0 15px 0 15px;
+}
+
+/*     кнопка "Game Center" вверху */
+
+asidetop p {
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 10px 160px 0 0;
+  border: 2px solid rgb(250, 250, 250)247, 245, 245);
+}
+asidetop p:active {
+  transform: scale(0.95);
+}
+asidetop p:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.651);
+}
+
+/*    Элементы правого сайдбара    */
+
+asideright {
+  overflow: auto;
+}
+asideright ul {
+  list-style-type: none;
+}
+ul p {
+  color: steelblue;
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: monospace;
+}
+asideright li {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+asideright ul li:last-child{
+  margin-bottom: 60px;
+}
+asideright ul li:active {
+  transform: scale(0.97);
+}
+asideright ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+asideright ul p:active {
+  transform: scale(0.97);
+}
+asideright ul p:hover {
+  cursor: pointer;
+  color: rgb(100, 171, 230);
+}
+.list-element-one {
+  color: #1CB195
+}
+.list-element-two {
+  color: #D26C27
+}
+.list-element-three {
+  color: slategray;
+}
+asideright ul li.list-element-one::before {
+  content: '';
+height: 30px;
+width: 30px;
+  background: url(./img/bot.png) 0 0 no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-color: rgb(210, 211, 130);
+  border-radius: 50%;
+  border: 3px solid rgb(255, 252, 252);
+  margin: 0px 10px -7px -30px; 
+}
+asideright ul li.list-element-one::bofo {
+  background-color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+asideright ul li.list-element-two::before {
+  content: '';
+height: 30px;
+width: 30px;
+  background: url(./img/user.webp) 0 0 no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-color: rgb(81, 173, 104);
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 0px 10px -7px -30px;
+  
+}
+asideright ul li.list-element-three::before {
+  content: '';
+height: 30px;
+width: 30px;
+  background: url(./img/offline.png) 0 0 no-repeat;
+  background-size: contain;
+  display: inline-block;
+  background-color: rgb(252, 249, 249);
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+margin: 0px 10px -7px -30px;
+}
+.section-one-text {
+  margin: 0 0 0 12px;
+}
+.section-two-text {
+  margin: 0 0 0 5px;
+}
+.section-three-text {
+  margin: 0 0 0 -15px;
+}
+
+/*    grid section  */
+
+.grid {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 3.5fr 1fr;
+  grid-template-rows: 65px 7fr 1fr;
+  grid-template-areas:
+    "asidetop header header"
+    "aside article asideright"
+      "aside footer asideright";
+}
+.grid > * {
+background-color: #2F3136;
+padding: 8px 15px;
+  color: #ffffff; 
+}
+.grid > *:nth-child(1) {
+  background-color: #36393F;
+}
+.grid > *:nth-child(2) {
+  background-color: #36393fbe;
+}
+.grid > *:nth-child(3) {
+  border-top-left-radius: 15px;
+}
+.grid > *:nth-child(4) {
+  border-bottom-left-radius: 60px;
+}
+.grid > *:nth-child(5) {
+  background-color: #36393F;
+}
+header {
+  grid-area: header;
+}
+article {
+grid-area: article;
+}
+aside {
+  grid-area: aside;
+}
+asidetop {
+  grid-area: asidetop;
+}
+footer {
+grid-area: footer;
+}
+asideright {
+grid-area: asideright;
+}
+
+/*   стилизация скролла   */
+
+::-webkit-scrollbar {
+  width: 24px;
+  height: 8px; 
+  background-color: #474A52;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #282829;
+  box-shadow: 1px 1px 15px;
+}
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+  linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+  linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:vertical:end:increment {
+  background:
+      linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+      linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
+/*       иконки слева       */
+
+.sidebar_icons_1 img {
+  position: absolute;
+  top: 40px;
+  left: 12px;
+  width: 60px;
+  height: 60px;
+}
+.sidebar_icons_1 img:active {
+  transform: scale(0.9);
+}
+.sidebar_icons_2 img {
+  position: absolute;
+  top: 115px;
+  left: 15px;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+}
+.sidebar_icons_2 img:active {
+  transform: scale(0.9);
+}
+.sidebar_icons_3 img {
+  position: absolute;
+  top: 190px;
+  left: 15px;
+  background-color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+}
+.sidebar_icons_3 img:active {
+  transform: scale(0.9);
+}
+.sidebar_icons_4 img {
+  position: absolute;
+  top: 265px;
+  left: 15px;
+  background-color: #2F3136;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+  border: 10px solid #2F3136;
+}
+.sidebar_icons_4 img:active {
+  transform: scale(0.9);
+}
+.sidebar_icons_5 img {
+  position: absolute;
+  top: 340px;
+  left: 15px;
+  background-color: #2F3136;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+  border: 10px solid #2F3136;
+}
+.sidebar_icons_5 img:active {
+  transform: scale(0.9);
+}
+
+/*      строка для ввода текста снизу      */
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.input input {
+  background-color:#474A52;
+  border-radius: 5px;
+  color: #7D8085; 
+  font-size: 20px;
+  width: 95%;
+  height: 40px;
+}
+.input img {
+  height: 30px;
+  width: 40px;
+}
+.buttons {
+  margin: 20px 0;
+  overflow: auto;
+}
+.demo-connect input {
+  width: 50px;
+}
+.demo-wrapper {
+  width: 1100px;
+  background: #36393F;
+  border-radius: 6px;
+  margin: -5px 0 35px 0;
+  padding: 15px;
+  border: 3px solid rgba(0, 0, 0, 0.438);
+}
+.demo-wrapper button.btn {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  margin: 6px 0 0 9px;
+  padding: 7px 20px;
+  line-height: normal;
+}
+.demo-wrapper .form-control {
+  float: left;
+  width: 840px;
+}
+.form-control {
+  margin-left: 50px;
+}
+.btn {
+  background-color: #818283;
+  
+}
+.demo-body .btn {
+  float: left;
+}
+.demo-body {
+  position: relative;
+}
+.demo-body button:active {
+  transform: scale(0.95);
+}
+.demo-body img {
+  background-color: #818283;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: -2px;
+  height: 40px;
+  width: 40px;
+}
+.demo-body img:active {
+  transform: scale(1.1);
+}
+
+/*  Подсветка элементов спойлеров при наведении  */
+
+.details p:hover {
+  color: white;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
+/*    Спойлеры в левом сайдбаре    */
+
+.details {
+  cursor: pointer;
+  padding: .5em .5em 0;
+  margin: -25px 0 0 0;
+  font-size: 25px;
+  color:rgb(141, 141, 141);
+}
+.details a {
+  text-decoration: none;
+  color: rgb(141, 141, 141);
+}
+.details p:active {
+  transform: scale(0.98);
+}
+.details-add p:last-child{
+  margin-bottom: 75px;
+}
+aside {
+  overflow: auto;
+}
+aside button {
+  outline: none;
+}
+aside button:hover {
+  transform: scale(0.97);
+  cursor: pointer;
+  box-shadow: inset 0px 0px 50px rgb(128, 124, 124);
+  outline: none;
+}
+.details p::before {
+  content: '';
+height: 30px;
+width: 30px;
+  background: url(./img/hashtag.png) 0 0 no-repeat;
+  background-size: contain;
+  display: inline-block;
+margin: 0px 5px -7px 0px;
+}
+.summary, .summary2, .summary3 {
+  color: white;
+  border: none;
+  text-align: left;
+  display: block;
+  box-shadow: inset 0px 0px 50px rgb(95, 93, 93);
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 7px;
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.summary::before {
+  content: '►';
+}
+.summary2::before {
+  content: '►';
+}
+.summary3::before {
+  content: '►';
+}
+
+.details__content1 {
+  display: none;
+}
+.details__content2 {
+  display: none;
+}
+.details__content3 {
+  display: none;
+}
+
+.summary-visible1::before {
+  content: '▼';
+}
+.summary-visible2::before {
+  content: '▼';
+}
+.summary-visible3::before {
+  content: '▼';
+}
+
+.summary-visible1 + .details__content1 {
+  display: block;
+}
+.summary-visible2 + .details__content2 {
+  display: block;
+}
+.summary-visible3 + .details__content3 {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
